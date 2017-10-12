@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Nome"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_image"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="30dip"
+        app:riv_mutate_background="false"
+        app:riv_oval="true"
+        app:riv_tile_mode="clamp" />
+
+    <TextView
+        android:id="@+id/tv_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Profissão"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

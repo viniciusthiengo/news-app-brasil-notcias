@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ScrollView
+            android:id="@+id/sv_terms_and_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/field_radius"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions" />
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/cb_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sv_terms_and_conditions"
+            android:layout_alignStart="@+id/sv_terms_and_conditions"
+            android:layout_below="@+id/sv_terms_and_conditions"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_terms_and_conditions" />
+
+        <Button
+            android:id="@+id/bt_send"
+            android:layout_width="88dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/button_radius"
+            android:enabled="false"
+            android:text="@string/enviar"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>

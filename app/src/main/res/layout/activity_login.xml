@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activities"
+    tools:context="thiengo.com.br.newsapp_brasilnotcias.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="180dp"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_login" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/field_radius"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/field_radius"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp" />
+
+    <Button
+        android:id="@+id/bt_entrar"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/et_password"
+        android:layout_alignRight="@+id/et_password"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_radius"
+        android:text="@string/entrar"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_alignTop="@+id/bt_entrar"
+        android:onClick="callSignUp"
+        android:text="@string/criar_conta"
+        android:textColor="@color/colorLinkText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/politicas_privacidade"
+        android:textColor="@color/colorLinkText" />
+
+</RelativeLayout>
