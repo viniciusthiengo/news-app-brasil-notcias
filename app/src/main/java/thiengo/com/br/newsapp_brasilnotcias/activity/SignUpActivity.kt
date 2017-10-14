@@ -1,5 +1,6 @@
 package thiengo.com.br.newsapp_brasilnotcias.activity
 
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.TabLayout
@@ -10,6 +11,7 @@ import me.iwf.photopicker.PhotoPicker
 import thiengo.com.br.newsapp_brasilnotcias.R
 import thiengo.com.br.newsapp_brasilnotcias.conf.SectionsPagerAdapter
 import thiengo.com.br.newsapp_brasilnotcias.fragment.SignUpPersonalFragment
+import thiengo.com.br.newsapp_brasilnotcias.logic.SignUpViewModel
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -31,6 +33,11 @@ class SignUpActivity : AppCompatActivity() {
 
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
         getSupportActionBar()?.setDisplayShowHomeEnabled(true)
+
+
+
+        val signUpViewModel = ViewModelProviders.of(this).get(SignUpViewModel::class.java)
+
 
         // Cria o adapter que vai retornar um fragment para cada uma das três
         // seções da atividade
