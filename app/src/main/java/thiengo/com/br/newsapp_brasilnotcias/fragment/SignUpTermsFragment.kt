@@ -7,9 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CompoundButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import kotlinx.android.synthetic.main.fragment_sign_up_terms.*
 import me.drakeet.materialdialog.MaterialDialog
 import thiengo.com.br.newsapp_brasilnotcias.R
@@ -33,6 +31,7 @@ class SignUpTermsFragment :
             R.layout.fragment_sign_up_terms,
             container,
             false)
+
         return view
     }
 
@@ -73,9 +72,13 @@ class SignUpTermsFragment :
             .of(activity)
             .get(SignUpViewModel::class.java)
 
+        /**
+         * COM AS LINHAS DE CÓDIGO ABAIXO FORAM REMOVIDOS OS findViewById()
+         * DO onCreateView().
+         */
         cb_terms.setOnCheckedChangeListener(this)
-
         bt_send.setOnClickListener(this)
+
         onCheckedChanged(null, signUpViewModel?.user?.statusTerms ?: false)
     }
 

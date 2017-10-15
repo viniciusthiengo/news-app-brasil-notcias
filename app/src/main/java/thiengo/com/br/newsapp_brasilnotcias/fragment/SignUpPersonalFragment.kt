@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.makeramen.roundedimageview.RoundedImageView
 import kotlinx.android.synthetic.main.fragment_sign_up_personal.*
 import me.iwf.photopicker.PhotoPicker
 import thiengo.com.br.newsapp_brasilnotcias.R
@@ -30,6 +31,7 @@ class SignUpPersonalFragment :
             R.layout.fragment_sign_up_personal,
             container,
             false)
+
         return view
     }
 
@@ -57,7 +59,12 @@ class SignUpPersonalFragment :
             .of(activity)
             .get(SignUpViewModel::class.java)
 
+        /**
+         * COM A LINHA DE CÓDIGO ABAIXO FOI REMOVIDO O findViewById()
+         * do onCreateView().
+         */
         iv_profile.setOnClickListener(this)
+
         updatePhoto( signUpViewModel?.user?.imagePath ?: "" )
         et_name.setText( signUpViewModel?.user?.name )
         et_profession?.setText( signUpViewModel?.user?.profession )
