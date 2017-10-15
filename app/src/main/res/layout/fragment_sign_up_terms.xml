@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:padding="20dp">
 
-        <ScrollView
+        <android.support.v4.widget.NestedScrollView
             android:id="@+id/sv_terms_and_conditions"
             android:layout_width="match_parent"
             android:layout_height="310dp"
@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/terms_and_conditions" />
-        </ScrollView>
+        </android.support.v4.widget.NestedScrollView>
 
         <CheckBox
             android:id="@+id/cb_terms"
@@ -45,6 +45,5 @@
             android:enabled="false"
             android:text="@string/enviar"
             android:textColor="@android:color/white" />
-
     </RelativeLayout>
 </ScrollView>

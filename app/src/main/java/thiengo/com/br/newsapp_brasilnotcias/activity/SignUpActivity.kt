@@ -34,11 +34,6 @@ class SignUpActivity : AppCompatActivity() {
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
         getSupportActionBar()?.setDisplayShowHomeEnabled(true)
 
-
-
-        val signUpViewModel = ViewModelProviders.of(this).get(SignUpViewModel::class.java)
-
-
         // Cria o adapter que vai retornar um fragment para cada uma das três
         // seções da atividade
         mSectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
@@ -80,7 +75,7 @@ class SignUpActivity : AppCompatActivity() {
                 val photos = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS)
                 val fragment = supportFragmentManager
                         .findFragmentByTag("android:switcher:${container.id}:${mSectionsPagerAdapter?.getItemId(0)}")
-                            as SignUpPersonalFragment
+                        as SignUpPersonalFragment
 
                 fragment.updatePhoto( photos[0] )
             }
