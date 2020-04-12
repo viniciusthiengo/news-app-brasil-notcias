@@ -6,7 +6,7 @@ Artigo que discute em detalhes o componente de arquitetura ViewModel. Componente
 
 <img src="https://www.thiengo.com.br/img/post/normal/gfo9dc84fdnafhkuju9h475oc2df707b37d3baa343996b791a174ef9b7.jpg" width="608" alt="Telas do aplicativo Android de notícias">
 
-O conteúdo do artigo também está disponível em [vídeos](https://www.thiengo.com.br/viewmodel-android-como-utilizar-este-componente-de-arquitetura#title-27) e em [slides](https://www.thiengo.com.br/viewmodel-android-como-utilizar-este-componente-de-arquitetura#title-26).
+O conteúdo do artigo também está disponível em [vídeo](https://www.thiengo.com.br/viewmodel-android-como-utilizar-este-componente-de-arquitetura#title-27) e em [slides](https://www.thiengo.com.br/viewmodel-android-como-utilizar-este-componente-de-arquitetura#title-26).
 
 ### Primeira parte
 
